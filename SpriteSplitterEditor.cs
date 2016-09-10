@@ -10,7 +10,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace HAA.Localization
+namespace HAA.EditorUtils
 {
 	public class SpriteSplitterEditor : EditorWindow
 	{
@@ -51,7 +51,7 @@ namespace HAA.Localization
 
 		void OnGUI ()
 		{
-			DrawSpriteSplitterEditor();	
+			DrawSpriteSplitterEditor();
 		}
 
 		public void DrawSpriteSplitterEditor()
@@ -120,7 +120,7 @@ namespace HAA.Localization
 						index++;
 					}
 				}
-	
+
 				importer.spritesheet = spritesheet.ToArray();
 				importer.SaveAndReimport();
 			}
